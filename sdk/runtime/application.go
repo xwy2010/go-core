@@ -8,9 +8,9 @@ import (
 
 	"github.com/casbin/casbin/v2"
 	"github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/storage"
-	"github.com/go-admin-team/go-admin-core/storage/queue"
 	"github.com/robfig/cron/v3"
+	"github.com/xwy2010/go-core/storage"
+	"github.com/xwy2010/go-core/storage/queue"
 	"gorm.io/gorm"
 )
 
