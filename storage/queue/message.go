@@ -37,10 +37,12 @@ func (m *Message) SetValues(values map[string]interface{}) {
 func (m *Message) GetPrefix() (prefix string) {
 	if m.Values == nil {
 		return
+	} else {
+
+		v, _ := m.Values[storage.PrefixKey]
+		prefix, _ = v.(string)
+		return
 	}
-	v, _ := m.Values[storage.PrefixKey]
-	prefix, _ = v.(string)
-	return
 }
 
 func (m *Message) SetPrefix(prefix string) {

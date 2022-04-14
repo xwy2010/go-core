@@ -1,7 +1,6 @@
 package queue
 
 import (
-	"github.com/go-redis/redis/v7"
 	"github.com/robinjoseph08/redisqueue/v2"
 
 	"github.com/xwy2010/go-core/storage"
@@ -27,7 +26,7 @@ func NewRedis(
 
 // Redis cache implement
 type Redis struct {
-	client   *redis.Client
+	// client   *redis.Client
 	consumer *redisqueue.Consumer
 	producer *redisqueue.Producer
 }
