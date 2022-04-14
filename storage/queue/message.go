@@ -39,10 +39,10 @@ func (m *Message) GetPrefix() (prefix string) {
 		return
 	} else {
 
-		v, _ := m.Values[storage.PrefixKey]
-		prefix, _ = v.(string)
-		return
 	}
+	v, _ := m.Values[storage.PrefixKey]
+	prefix, _ = v.(string)
+	return
 }
 
 func (m *Message) SetPrefix(prefix string) {

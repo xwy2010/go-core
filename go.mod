@@ -14,9 +14,9 @@ require (
 	github.com/nsqio/go-nsq v1.1.0
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/robinjoseph08/redisqueue/v2 v2.1.0
-	github.com/spf13/cast v1.4.1
+	github.com/spf13/cast v1.3.1
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
-	gorm.io/gorm v1.23.4
+	gorm.io/gorm v1.21.11
 )
 
 require (
