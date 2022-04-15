@@ -7,8 +7,8 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"github.com/casbin/casbin/v2"
-	"github.com/go-admin-team/go-admin-core/logger"
 	"github.com/robfig/cron/v3"
+	"github.com/xwy2010/go-core/logger"
 	"github.com/xwy2010/go-core/storage"
 	"github.com/xwy2010/go-core/storage/queue"
 	"gorm.io/gorm"
