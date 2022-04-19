@@ -3,7 +3,7 @@ package config
 import (
 	"time"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/go-redis/redis/v7"
 	"github.com/robinjoseph08/redisqueue/v2"
 	"github.com/xwy2010/go-core/storage"
 	"github.com/xwy2010/go-core/storage/queue"
