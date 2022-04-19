@@ -11,9 +11,6 @@ require (
 	github.com/fsnotify/fsnotify v1.5.1
 	github.com/ghodss/yaml v1.0.0
 	github.com/gin-gonic/gin v1.7.7
-	github.com/go-admin-team/go-admin-core v1.3.10
-	github.com/go-admin-team/go-admin-core/plugins/logger/zap v1.3.0
-	github.com/go-admin-team/go-admin-core/sdk v1.3.11
 	github.com/go-admin-team/gorm-adapter/v3 v3.2.1-0.20220308061210-6db7e7891fb9
 	github.com/go-redis/redis/v7 v7.4.1
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
@@ -28,6 +25,7 @@ require (
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
 	github.com/smartystreets/goconvey v1.7.2
 	github.com/spf13/cast v1.4.1
+	github.com/xwy2010/go-core/plugins/logger/zap v0.0.0-20220419062446-ad4a25de5555
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
 	google.golang.org/grpc v1.45.0
 	gorm.io/driver/mysql v1.1.2
@@ -42,6 +40,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/Masterminds/sprig/v3 v3.2.2 // indirect
 	github.com/andygrunwald/go-jira v1.14.0 // indirect
+	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/chanxuehong/rand v0.0.0-20211009035549-2f07823e8e99 // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d // indirect
