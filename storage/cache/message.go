@@ -1,8 +1,8 @@
 package cache
 
 import (
-	"github.com/robinjoseph08/redisqueue/v2"
 	"github.com/xwy2010/go-core/storage"
+	"github.com/xwy2010/go-core/storage/queue/redisqueue"
 )
 
 type Message struct {

@@ -1,7 +1,7 @@
 package queue
 
 import (
-	"github.com/robinjoseph08/redisqueue/v2"
+	"github.com/xwy2010/go-core/storage/queue/redisqueue"
 
 	"github.com/xwy2010/go-core/storage"
 )

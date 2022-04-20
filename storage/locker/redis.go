@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/bsm/redislock"
-	"github.com/go-redis/redis/v7"
+	"github.com/go-redis/redis/v8"
 )
 
 // NewRedis 初始化locker
@@ -29,6 +29,6 @@ func (r *Redis) Lock(key string, ttl int64, options *redislock.Options) (*redisl
 		r.mutex = redislock.New(r.client)
 	}
 	fmt.Println(options)
-	return r.mutex.Obtain(key, time.Duration(ttl)*time.Second, options)
+	return r.mutex.Obtain(r.client.Context(), key, time.Duration(ttl)*time.Second, options)
 
 }
