@@ -1,6 +1,7 @@
 package locker
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/bsm/redislock"
@@ -27,5 +28,7 @@ func (r *Redis) Lock(key string, ttl int64, options *redislock.Options) (*redisl
 	if r.mutex == nil {
 		r.mutex = redislock.New(r.client)
 	}
+	fmt.Println(options)
 	return r.mutex.Obtain(key, time.Duration(ttl)*time.Second, options)
+
 }
