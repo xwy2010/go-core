@@ -73,11 +73,16 @@ func GetOrm(c *gin.Context) (*gorm.DB, error) {
 	if !exist {
 		return nil, errors.New("db connect not exist")
 	}
-	switch idb.(type) {
-	case *gorm.DB:
-		//新增操作
-		return idb.(*gorm.DB), nil
-	default:
+	_, ok := idb.(*gorm.DB)
+	if !ok {
 		return nil, errors.New("db connect not exist")
 	}
+	return idb.(*gorm.DB), nil
+	// switch idb.(type) {
+	// case *gorm.DB:
+	// 	//新增操作
+	// 	return idb.(*gorm.DB), nil
+	// default:
+	// 	return nil, errors.New("db connect not exist")
+	// }
 }
