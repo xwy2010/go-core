@@ -8,6 +8,7 @@ require (
 	github.com/bsm/redislock v0.7.2
 	github.com/casbin/casbin/v2 v2.44.0
 	github.com/chanxuehong/wechat v0.0.0-20211009063332-41a5c6d8b38b
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fsnotify/fsnotify v1.5.1
 	github.com/ghodss/yaml v1.0.0
 	github.com/gin-gonic/gin v1.7.7
@@ -17,6 +18,7 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/imdario/mergo v0.3.12
 	github.com/json-iterator/go v1.1.12
+	github.com/mojocn/base64Captcha v1.3.5
 	github.com/nsqio/go-nsq v1.1.0
 	github.com/pkg/errors v0.9.1
 	github.com/robfig/cron/v3 v3.0.1
