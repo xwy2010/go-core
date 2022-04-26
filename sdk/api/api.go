@@ -135,8 +135,8 @@ func (e Api) Translate(form, to interface{}) {
 	pkg.Translate(form, to)
 }
 
-// getAcceptLanguage 获取当前语言
-func (e *Api) getAcceptLanguage() string {
+// GetAcceptLanguage 获取当前语言
+func (e *Api) GetAcceptLanguage() string {
 	languages := language.ParseAcceptLanguage(e.Context.GetHeader("Accept-Language"), nil)
 	if len(languages) == 0 {
 		return DefaultLanguage

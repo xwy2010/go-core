@@ -100,11 +100,11 @@ func (e *bindConstructor) getBinding(name string) []uint8 {
 	return e.cache[name]
 }
 
-func (e *bindConstructor) setBinding(name string, bs []uint8) {
-	e.mux.Lock()
-	defer e.mux.Unlock()
-	if e.cache == nil {
-		e.cache = make(map[string][]uint8)
-	}
-	e.cache[name] = bs
-}
+// func (e *bindConstructor) setBinding(name string, bs []uint8) {
+// 	e.mux.Lock()
+// 	defer e.mux.Unlock()
+// 	if e.cache == nil {
+// 		e.cache = make(map[string][]uint8)
+// 	}
+// 	e.cache[name] = bs
+// }
